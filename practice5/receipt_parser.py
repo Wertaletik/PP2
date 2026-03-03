@@ -10,7 +10,7 @@ def parse_receipt(a):
     price = r'(\d+,\d{3})\s*x\s*(\d+,\d{2})'
     prices = re.findall(price, raw)
     prices_clean = [
-        float((p[1].replace(" ", "")).replace(",", "."))
+        float((p[1].replace(" ", "")).replace(",", "."))*float((p[0].replace(" ","")).replace(",","."))
         for p in prices
     ]
 
