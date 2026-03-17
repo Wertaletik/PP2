@@ -1,7 +1,7 @@
 import shutil
 import os
 
-shutil.copy("sample.txt", "sample_backup.txt")
+shutil.copy("./practice6/sample.txt", "./practice6/sample_backup.txt")
 
-if os.path.exists("sample.txt"):
-    os.remove("sample.txt")
+if os.path.exists("./practice6/sample.txt"):
+    os.remove("./practice6/sample.txt")
