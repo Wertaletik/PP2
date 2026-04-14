@@ -13,8 +13,8 @@ player = MusicPlayer(playlist)
 running = True
 while running:
     screen.fill((30, 30, 30))
-
-    text = font.render(f"Track: {player.get_current()}", True, (255, 255, 255))
+    song = list(player.get_current().split("/"))[3][:-4]
+    text = font.render(f"Track: {song}", True, (255, 255, 255))
     screen.blit(text, (20, 20))
 
     for event in pygame.event.get():
