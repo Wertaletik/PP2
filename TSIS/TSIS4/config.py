@@ -22,7 +22,6 @@ DB_CONFIG = {
 DEFAULT_SETTINGS = {
     "snake_color": [0, 200, 0],
     "grid_overlay": True,
-    "sound": True,
 }
 
 BACKGROUND_COLOR = (20, 22, 25)
